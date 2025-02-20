@@ -1,9 +1,8 @@
 function homepageLoad() {
     const background = document.querySelector('.background');
-    background.classList.add('blur');
+    background.classList.remove('blur');
 
     const contentDiv = document.querySelector('#content');
-    console.log(contentDiv);
 
     const titleDiv = document.createElement('div');
     const leftTitle = document.createElement('h1');
