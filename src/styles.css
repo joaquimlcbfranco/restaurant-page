@@ -1,4 +1,6 @@
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Reset */
 *,
@@ -71,13 +73,84 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "Roboto", "Montserrat", var(--default-fonts);
 }
 
-.content-background {
-    background-position: center center;
-    background-repeat: no-repeat;
+.background {
+    background-image: url(./ramen.jpg);
+    height: 100vh;
+    width: 100%;
     background-size: cover;
-    height: 100%;
-    width: auto;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    border: none;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    font-size: 1.7rem;
+    font-family: "Montserrat", "Roboto", var(--default-fonts);
+}
+
+.header nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header nav > button {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(242, 243, 244);
+    text-shadow: 0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(0, 0, 0);
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 7vw;
+    height: 100vh;
+    gap: 16px;
+}
+
+.content-title {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    color: rgb(242, 243, 244);
+    font-size: 2.5rem;
+    font-family: "Montserrat", "Roboto", var(--default-fonts);
+    text-shadow: 0 0 10px rgb(0, 0, 0),
+                0 0 20px rgb(0, 0, 0);
+    z-index: 0;
+}
+
+.left-title {
+    font-weight: 300;
+}
+
+.content-description {
+    text-align: end;
+    width: 35%;
+    color: rgb(242, 243, 244);
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-shadow: 0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(0, 0, 0);
+}
