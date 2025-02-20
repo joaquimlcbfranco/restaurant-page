@@ -1,6 +1,7 @@
 import "./styles.css";
 import { homepageLoad } from "./home.js";
 import { menuLoad } from "./menu.js";
+import { aboutLoad } from "./about.js";
 
 (function displayController() {
     const contentDiv = document.querySelector('#content');
