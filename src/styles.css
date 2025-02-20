@@ -322,7 +322,7 @@ button:hover > p::before {
 	grid-template-columns: 1fr 1fr;
 	height: 100%;
 	width: 100%;
-	padding: 32px;
+	padding-bottom: calc(24px + 0.5rem);
 }
 
 .about .left-section {
@@ -333,14 +333,16 @@ button:hover > p::before {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 32px;
+	gap: calc(8px + 0.5rem);
 	text-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-top: 5vh;
+    margin-left: 10vw
 }
 
 .left-section > .story,
 .left-section > .secret {
 	text-align: center;
-	width: 50%;
+	width: calc(250px + 2rem + 3vw);
 }
 
 .story > h1,
@@ -394,11 +396,11 @@ button:hover > p::before {
 
 .about .right-section {
 	grid-column: 2 / 3;
-    height: 100%;
-    width: 100%;
 	background-image: url(./about.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 0 10px 10px 0;
+    margin-top: 5vh;
+    margin-right: 10vw;
 }
