@@ -1,4 +1,8 @@
-# restaurant-page
+# A sample ramen restaurant page
+
+This project was deployed using npm and webpack (first time using both of them). All the user interactions and main content, besides the header, are loaded entirely with JavaScript.
+
+<strong>Check out the live preview at: https://joaquimlcbfranco.github.io/restaurant-page/</strong>
 
 ### Credit
 Header button icons:<br>
