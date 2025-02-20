@@ -1,3 +1,4 @@
 import "./styles.css";
+import { homepageLoad } from "./home.js";
 
-console.log('Test');
+// homepageLoad();
