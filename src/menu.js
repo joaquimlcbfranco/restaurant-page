@@ -59,22 +59,22 @@ function menuLoad() {
     items[0].querySelector('span > p').textContent = "A beautifully arranged assortment of fresh sushi, including a mix of nigiri, sashimi, and specialty rolls.Made with premium seafood, perfectly seasoned rice, and delicate garnishes, this platter is perfect for sharing or indulging on your own.A true sushi lover's delight!";
 
     items[1].querySelector('img').src = dumplings;
-    items[0].querySelector('img').alt = 'Menu photo of dumplings';
+    items[1].querySelector('img').alt = 'Menu photo of dumplings';
     items[1].querySelector('span > h1').innerHTML = 'Dumpling <span>Combo</span>';
     items[1].querySelector('span > p').textContent = "A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor. Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!";
 
     items[2].querySelector('img').src = miso;
-    items[0].querySelector('img').alt = 'Menu photo of Miso ramen';
+    items[2].querySelector('img').alt = 'Menu photo of Miso ramen';
     items[2].querySelector('span > h1').innerHTML = 'Miso <span>Ramen</span>';
     items[2].querySelector('span > p').textContent = "A hearty and soul-warming ramen featuring a miso-based broth that’s both savory and slightly sweet. Paired with chewy wavy noodles, corn, butter, and tender slices of pork, this dish is packed with depth and flavor, perfect for warming up on a cold day.";
 
     items[3].querySelector('img').src = tokotsu;
-    items[0].querySelector('img').alt = 'Menu photo of Tokotsu ramen';
+    items[3].querySelector('img').alt = 'Menu photo of Tokotsu ramen';
     items[3].querySelector('span > h1').innerHTML = 'Tokotsu <span>Ramen</span>';
     items[3].querySelector('span > p').textContent = "A rich and silky pork bone broth, slow-simmered for hours to achieve a deep, creamy texture. Served with thin, straight noodles, melt-in-your-mouth chashu pork, green onions, and a soft-boiled egg, this classic bowl is pure comfort in every bite.";
 
     items[4].querySelector('img').src = tantanman;    
-    items[0].querySelector('img').alt = 'Menu photo of Tantanman ramen';
+    items[4].querySelector('img').alt = 'Menu photo of Tantanman ramen';
     items[4].querySelector('span > h1').innerHTML = 'Tantanman <span>Ramen</span>';
     items[4].querySelector('span > p').textContent = "A hearty and soul-warming ramen featuring a miso-based broth that’s both savory and slightly sweet. Paired with chewy wavy noodles, corn, butter, and tender slices of pork, this dish is packed with depth and flavor, perfect for warming up on a cold day.";
 
