@@ -1,4 +1,7 @@
 function homepageLoad() {
+    const background = document.querySelector('.background');
+    background.classList.add('blur');
+
     const contentDiv = document.querySelector('#content');
     console.log(contentDiv);
 
