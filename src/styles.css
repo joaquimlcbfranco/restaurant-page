@@ -187,11 +187,11 @@ button:hover > p::before {
 }
 
 .left-title {
-	font-weight: 300;
+    color: rgb(235, 229, 194);
 }
 
 .right-title {
-	color: rgb(214, 189, 152);
+	font-weight: 300;
 }
 
 .content-description {
@@ -215,7 +215,7 @@ button:hover > p::before {
 }
 
 .slide {
-    height: 100%;
+	height: 100%;
 	visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -226,21 +226,22 @@ button:hover > p::before {
 	gap: 8px;
 	transition: opacity 500ms ease-in-out;
 	transition-delay: 500ms;
-    z-index: -1;
+	z-index: -1;
+    overflow: hidden;
 }
 
 .slide[data-active] {
 	transition-delay: 0ms;
 	visibility: visible;
-    width: 100%;
+	width: 100%;
 	opacity: 1;
 	display: flex;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
 .slide[data-active] > img {
-    width: calc(550px + 3.5vw);
+	width: calc(550px + 3.5vw);
 	height: auto;
 	filter: drop-shadow(0 0 20px rgb(0, 0, 0));
 }
@@ -254,11 +255,11 @@ button:hover > p::before {
 }
 
 .slide[data-active] > span {
-    width: 35%;
-    padding: 32px 16px;
+	width: 35%;
+	padding: 32px 16px;
 	color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 0.5rem;
 	text-align: end;
 	text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
 }
@@ -266,7 +267,8 @@ button:hover > p::before {
 .slide[data-active] span > h1 {
 	font-size: 2.5rem;
 	font-family: "Montserrat", "Roboto", var(--default-fonts);
-	color: rgb(214, 189, 152);
+	/* color: rgb(214, 189, 152); */
+    color: rgb(235, 229, 194);
 	text-transform: uppercase;
 }
 
@@ -313,4 +315,90 @@ button:hover > p::before {
 
 .carousel-button:focus {
 	outline: 1px solid black;
+}
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	width: 100%;
+	padding: 32px;
+}
+
+.about .left-section {
+	grid-column: 1 / 2;
+	background-color: rgb(44, 57, 48);
+	border-radius: 10px 0 0 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.left-section > .story,
+.left-section > .secret {
+	text-align: center;
+	width: 50%;
+}
+
+.story > h1,
+.secret > h1 {
+	font-size: 2.5rem;
+	font-family: "Montserrat", "Roboto", var(--default-fonts);
+	text-transform: uppercase;
+}
+
+.story > span,
+.secret > span {
+    display: block;
+	width: 100%;
+	height: 1px;
+	background-color: rgb(242, 243, 244);
+    margin-bottom: 8px;
+}
+
+.story > p,
+.secret > p {
+	font-family: "Roboto", "Montserrat", var(--default-fonts);
+	font-weight: 300;
+}
+
+.left-section button {
+	color: rgb(242, 243, 244);
+	font-family: "Montserrat", "Roboto", var(--default-fonts);
+    font-weight: 300;
+	background: none;
+	outline: none;
+	border: 1px solid rgb(242, 243, 244);
+	padding: 12px 20px;
+	text-transform: uppercase;
+	box-shadow: 0 0 10px rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: scale 200ms;
+}
+
+.left-section button:hover {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.left-section button:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left-section button:focus {
+	outline: 1px solid black;
+}
+
+.about .right-section {
+	grid-column: 2 / 3;
+    height: 100%;
+    width: 100%;
+	background-image: url(./about.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0 10px 10px 0;
 }
