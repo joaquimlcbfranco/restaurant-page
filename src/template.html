@@ -11,9 +11,15 @@
     <div class="background blur"></div>
     <header class="header">
         <nav>
-            <button type="button" id="home"><p>Home</p><img id="house" src="./house.png"></button>
-            <button type="button" id="menu"><p>Menu</p><img id="ramen" src="./ramen.png"></button>
-            <button type="button" id="about"><p>About</p><img id="chopsticks" src="./chopsticks.png"></button>
+            <button type="button" id="home">
+                <p>Home</p><img id="house" src="./house.png">
+            </button>
+            <button type="button" id="menu">
+                <p>Menu</p><img id="ramen" src="./ramen.png">
+            </button>
+            <button type="button" id="about">
+                <p>About</p><img id="chopsticks" src="./chopsticks.png">
+            </button>
         </nav>
     </header>
     <div id="content">
@@ -22,43 +28,53 @@
             <h1 class="right-title">RAMEN</h1>
         </div>
         <p class="content-description">Savor the rich flavors of authentic ramen, crafted with passion and the finest ingredients. From bold broths to perfectly cooked noodles, every bowl is a taste of Japan. Order now or visit us to experience ramen at its best!</p> -->
-        <div class="carousel">
-            <button class="carousel-button prev">&#10229</button>
-            <button class="carousel-button next">&#10230</button>
-            <ul>
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#x27A4</button>
+            <button class="carousel-button next" data-carousel-button="next">&#10148</button>
+            <ul data-slides>
                 <li class="slide" data-active>
                     <img src="./menu-sushi.png" alt="Menu photo of sushi">
                     <span>
-                        <h1>Sushi Platter</h1>
-                    <p>A beautifully arranged assortment of fresh sushi, including a mix of nigiri, sashimi, and specialty rolls. Made with premium seafood, perfectly seasoned rice, and delicate garnishes, this platter is perfect for sharing or indulging on your own. A true sushi lover's delight!</p>
-                    </span>    
-                </li>
-                <li class="slide">
-                    <img src="./menu-dumplings.png" alt="Menu photo of dumplings">
-                    <span>
-                        <h1>Five Dumpling Combo</h1>
-                        <p>A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor. Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!</p>
+                        <h1>Sushi <span>Platter</span></h1>
+                        <p>A beautifully arranged assortment of fresh sushi, including a mix of nigiri, sashimi, and
+                            specialty rolls. Made with premium seafood, perfectly seasoned rice, and delicate garnishes,
+                            this platter is perfect for sharing or indulging on your own. A true sushi lover's delight!
+                        </p>
                     </span>
                 </li>
                 <li class="slide">
                     <img src="./menu-dumplings.png" alt="Menu photo of dumplings">
                     <span>
-                        <h1>Five Dumpling Combo</h1>
-                        <p>A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor. Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!</p>
+                        <h1>Dumpling <span>Combo</span></h1>
+                        <p>A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor.
+                            Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!</p>
                     </span>
                 </li>
                 <li class="slide">
-                    <img src="./menu-dumplings.png" alt="Menu photo of dumplings">
+                    <img src="./miso-ramen.png" alt="Menu photo of miso ramen">
                     <span>
-                        <h1>Five Dumpling Combo</h1>
-                        <p>A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor. Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!</p>
+                        <h1>Miso <span>Ramen</span></h1>
+                        <p>A hearty and soul-warming ramen featuring a miso-based broth that’s both savory and slightly
+                            sweet. Paired with chewy wavy noodles, corn, butter, and tender slices of pork, this dish is
+                            packed with depth and flavor, perfect for warming up on a cold day.</p>
                     </span>
                 </li>
                 <li class="slide">
-                    <img src="./menu-dumplings.png" alt="Menu photo of dumplings">
+                    <img src="./tokotsu-ramen.png" alt="Menu photo of tokotsu ramen">
                     <span>
-                        <h1>Five Dumpling Combo</h1>
-                        <p>A delicious assortment of five handcrafted dumplings, each with a unique filling and flavor. Perfectly steamed or pan-fried to golden perfection. A must-try for dumpling lovers!</p>
+                        <h1>Tokotsu <span>Ramen</span></h1>
+                        <p>A rich and silky pork bone broth, slow-simmered for hours to achieve a deep, creamy texture.
+                            Served with thin, straight noodles, melt-in-your-mouth chashu pork, green onions, and a
+                            soft-boiled egg, this classic bowl is pure comfort in every bite.</p>
+                    </span>
+                </li>
+                <li class="slide">
+                    <img src="./tantanman-ramen.png" alt="Menu photo of tantanman ramen">
+                    <span>
+                        <h1>Tantanman <span>Ramen</span></h1>
+                        <p>A hearty and soul-warming ramen featuring a miso-based broth that’s both savory and slightly
+                            sweet. Paired with chewy wavy noodles, corn, butter, and tender slices of pork, this dish is
+                            packed with depth and flavor, perfect for warming up on a cold day.</p>
                     </span>
                 </li>
             </ul>
