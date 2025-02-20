@@ -24,7 +24,7 @@ function menuLoad() {
     const buttonNext = document.createElement('button');
     buttonNext.classList.add('carousel-button', 'next');
     buttonNext.innerHTML = '&#10148';
-    buttonNext.dataset.carouselButton = 'prev';
+    buttonNext.dataset.carouselButton = 'next';
     carouselDiv.appendChild(buttonNext);
 
     const list = document.createElement('ul');
