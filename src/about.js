@@ -38,11 +38,6 @@ function aboutLoad() {
     story.appendChild(bottomSpan);
     story.appendChild(bottomDescription);
 
-    const button = document.createElement('button');
-    leftSection.appendChild(button);
-    button.type = 'button';
-    button.textContent = 'Discover Our Menu';
-
     const rightSection = document.createElement('div');
     rightSection.classList.add('right-section');
     about.appendChild(rightSection);
