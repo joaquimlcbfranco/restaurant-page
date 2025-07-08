@@ -1,4 +1,4 @@
-# A sample ramen restaurant page
+# A sample desktop ramen restaurant page
 
 This project was deployed using npm and webpack (first time using both of them). All the user interactions and main content, besides the header, are loaded entirely with JavaScript.
 
